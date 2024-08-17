@@ -1,3 +1,19 @@
-.index-title {
-  font-size: 100px;
+main{
+  margin: 0 32px;
+  width: calc(100% - 296px);
+}
+.list-group{
+  width: 320px;
+}
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 24
+}
+
+.fs-12{
+  font-size: 12px;
 }
