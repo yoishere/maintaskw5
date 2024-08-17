@@ -4,57 +4,215 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- 要在這邊加上，這樣google icon才能用 -->
     <title>index</title>
-    <script type="module" crossorigin src="/maintaskw5/assets/main-8fb2a326.js"></script>
-    <link rel="stylesheet" href="/maintaskw5/assets/main-e523073d.css">
+    <script type="module" crossorigin src="/maintaskw5/assets/main-df21557c.js"></script>
+    <link rel="stylesheet" href="/maintaskw5/assets/main-1cade67e.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="/maintaskw5/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
+    <div class="d-flex">
+      <header class="navbar navbar-expand-lg bg-body-tertiary flex-column p-0 position-fixed top-0">
+    <!-- 可用position-fixed把左邊欄固定 -->
+      <div class="container-fluid flex-column px-0 align-items-start mt-3">
+        <a class="navbar-brand p-0 ps-3" href="#">
+          <img src="/maintaskw5/assets/logo-ANSWER-5336fb45.svg" alt="LOGO">
+        </a>
+          
+          <ul class="navbar-nav flex-column vh-100 w-100 fw-bold">
+            <li class="nav-item  ps-3">
+              <a class="nav-link p-0 d-flex align-items-center" aria-current="page" href="#"><span class="material-symbols-outlined align-bottom pe-3">
+                  analytics
+                  </span>Dashboard</a>
+            </li>
+            <li class="nav-item  ps-3">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-symbols-outlined align-bottom pe-3">
+                  quiz
+                  </span>Question</a>
+            </li>
+            <li class="nav-item border-start border-3 border-success ps-3">
+              <a class="nav-link p-0 text-success d-flex align-items-center active" href="#"><span class="material-symbols-outlined align-bottom pe-3">
+                  assignment
+                  </span>Assignment</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-symbols-outlined align-bottom pe-3">
+                  video_library
+                  </span>Course</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-symbols-outlined align-bottom pe-3">
+                  supervisor_account
+                  </span>Admin</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a class="nav-link p-0 d-flex align-items-center" href="#"><span class="material-symbols-outlined align-bottom pe-3">
+                  settings
+                  </span>Settings</a>
+            </li>
+          </ul>
+        
       </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="d-flex ps-3">
+          <div class="flex-shrink-0">
+            <img src="/maintaskw5/assets/andychen-f14fef59.jpeg" alt="andy" class="rounded-circle object-fit-cover" width="40px" height="40px" >
+            <!-- object-fit-cover才不會因為設定高度寬度被壓扁 -->
+            <!-- 這邊沒有跟上面靠左對齊 -->
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="flex-grow-1 ms-3">
+              <p class="fs-6 fw-bold text-gray-900">Andy Chen</p>
+              <p class="fs-875 text-gray-600">andy0401@mail.com</p>
+              <!-- 這邊沒有寫成功 grey-600 -->
           </div>
+      </div>
+    </header>      <main class="content">
+        <nav class="navbar navbar-expand px-0 w-100 d-flex justify-content-between">          
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <h1 class="navbar-brand fs-4">Assignment</h1>
+              <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <button class="btn  dropdown-toggle fs-6" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Courses
+                    </button>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="d-flex">
+            <a href="#"><span class="material-symbols-outlined">search</span></a>
+            <a href="#"><span class="material-symbols-outlined ms-4">notifications_active</span></a>
+          </div>
+        </nav>
+        <div class="d-flex gap-3">          
+          <div class="list-group rounded-0">
+            <!-- 沒有吃到w:320的樣式耶 -->
+            <a href="#" class="list-group-item list-group-item-action active bg-light text-dark border border-dark-subtle" aria-current="true">
+              <!-- 有空再加上這個：JavaScript behavior -->
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 fs-12">Chapter Assignment 2</h5>
+                <small class="fs-12">4 hrs a go</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 fs-6 fw-bold">Please check this file…</p>
+                <small class="fs-12">Emily Wang</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 fs-12">Chapter Assignment 1</h5>
+                <small class="fs-12">12 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 fs-6 fw-bold">My Homework</p>
+                <small class="fs-12">David Xu</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action ">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 fs-12">Final Assignment</h5>
+                <small class="fs-12">18 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 fs-6 fw-bold">Have a problem with this…</p>
+                <small class="fs-12">Tony Wei</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 fs-12">Final Assignment</h5>
+                <small class="fs-12">19 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 fs-6 fw-bold">Did I do it right?</p>
+                <small class="fs-12">Christina Lin</small>
+              </div>
+            </a>
+          </div>
+          <div>
+            <div class="card w-100 rounded-0">
+              <div class="card-header">
+                <p>Chapter Assignment 2 / HTML&CSS</p>
+                <h5>Please check this file for me, thanks!</h5>
+              </div>
+              <div class="card-body flex-column ">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <img src="/maintaskw5/assets/emilywang-cc5a821b.jpeg" alt="Emily" class="rounded-circle object-fit-cover" width="40px" height="40px" >
+                    <!-- object-fit-cover才不會因為設定高度寬度被壓扁 -->
+                    <!-- 這邊沒有跟上面靠左對齊 -->
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                      <p class="fs-6 fw-bold text-gray-900">Emily Wang</p>
+                      <time datetime="" class="fs-875">10:38 AM (4 hours ago)</time>
+                      <p>Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                      <a class="btn btn-light rounded-0" href="#" download>
+                        <span class="material-symbols-outlined align-bottom">attach_file</span>
+                        HW-2-David.zip
+                      </a>
+                      <!-- 這邊沒有寫成功 grey-600-->
+                  </div>
+                </div>
+                <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img src="/maintaskw5/assets/andychen-f14fef59.jpeg" alt="andy" class="rounded-circle object-fit-cover" width="40px" height="40px" >
+                      <!-- object-fit-cover才不會因為設定高度寬度被壓扁 -->
+                      <!-- 這邊沒有跟上面靠左對齊 -->
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <div class="d-flex justify-content-between">
+                          <div>
+                            <p class="fs-6 fw-bold text-gray-900">Andy Chen (You)</p>
+                            <time datetime="" class="fs-875">13:24 AM (1 hours ago)</time>
+                          </div>
+                          <div>
+                            <span class="material-symbols-outlined">star</span>
+                            <!-- 怎麼把星星變空心 即使scss加上樣式了 -->
+                            <span class="material-symbols-outlined">edit</span>
+                          </div>
+                        </div>
+                        <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. </br></br>You can: </br></br>• adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or </br>• change the <code>display</code> so it isn’t inline.</p>
+                        <!-- 這邊沒有寫成功 grey-600 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <div class="d-flex">
+                  <a href="#">
+                  <span class="material-symbols-outlined">chevron_left</span></a>
+                  <a href="#">
+                  <span class="material-symbols-outlined ms-4">chevron_right</span></a>
+                </div>
+                <div>
+                  <button class="btn border border-success rounded-0 text-success">Mark as read</button>
+                  <button class="btn btn-success rounded-0 ms-3 position-relative" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseExample" 
+                  aria-expanded="false" aria-controls="collapseExample">Reply</button>
+                </div>
+                <div class="collapse position-abosulute bottom-0 end-0" id="collapseExample">
+                  <div class="card card-body">
+                    123123jiojijpk]k
+                    <button class="btn btn-success rounded-0 ms-3 position-relative" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#collapseExample" 
+                  aria-expanded="false" aria-controls="collapseExample">Reply</button>
+                  </div>
+                </div>
+              </div>
+            </div>           
+          </div>
+          
+
         </div>
-      </div>
+      </main>
     </div>
 
-    <footer class="footer">我是 footer</footer>
     
   </body>
 </html>
