@@ -31,3 +31,11 @@ textarea{
   width: 584px;
 }
 
+.list-group-item, .card-header{
+  padding: 12px;
+}
+
+.small-text{
+  white-space: nowrap;
+  flex-shrink: 0;
+}
