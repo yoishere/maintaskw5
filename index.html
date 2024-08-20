@@ -131,7 +131,7 @@
                 <p class="mb-1 fs-12">Chapter Assignment 2 / HTML&CSS</p>
                 <p class="mb-1 fs-6 fw-bold">Please check this file for me, thanks!</p>
               </div>
-              <div class="card-body flex-column ">
+              <div class="card-body flex-column">
                 <div class="d-flex">
                   <div class="flex-shrink-0">
                     <img src="/maintaskw5/assets/emilywang-cc5a821b.jpeg" alt="Emily" class="rounded-circle object-fit-cover" width="40px" height="40px" >
@@ -148,7 +148,7 @@
                   </div>
                 </div>
                 
-                <div class="d-flex pt-3  position-relative">
+                <div class="d-flex pt-3 position-relative">
                     <div class="flex-shrink-0">
                       <img src="/maintaskw5/assets/andychen-f14fef59.jpeg" alt="andy" class="rounded-circle object-fit-cover" width="40px" height="40px" >
                       <!-- object-fit-cover才不會因為設定高度寬度被壓扁 -->                    
@@ -171,7 +171,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-between mt-3">
+              <div class="d-flex justify-content-between mt-3 ">
                 <div class="d-flex">
                   <a href="#">
                   <span class="material-symbols-outlined">chevron_left</span></a>
@@ -184,12 +184,13 @@
                   data-bs-toggle="collapse" data-bs-target="#collapseExample" 
                   aria-expanded="false" aria-controls="collapseExample">Reply</button>
                 </div>
-                <div class="collapse position-absulute  bottom-0 right-0 w-100" id="collapseExample">
-                  <!-- 為甚麼這邊定位為 bottom-0 end-0 還是沒辦法往上彈出視窗?而且明明有設定在andy留言那一層，但是卻沒辦法改住 -->
-                  <div class="card rounded-0">
+                  <!-- 以下是彈跳視窗 -->
+                <div class="collapse position-absolute  bottom-0 right-0 w-100" id="collapseExample">
+                  <!-- 為甚麼這邊定位在設定在andy留言那一層，但是卻沒辦法蓋到正確位置 -->
+                  <div class="card rounded-0 w-100">
                       <div class="card-header">
                         <ul class="nav nav-pills card-header-pills">
-                          <li class="nav-item">
+                          <li class="nav-item"> 
                             <button class="btn  dropdown-toggle fs-6 text-start fw-bold p-0 border-0 fs-6" data-bs-toggle="dropdown" aria-expanded="false">
                               Body Text</button>
                           </li>
@@ -231,7 +232,7 @@
                         </ul>
                       </div>
                       <textarea class="card-body fs-12 text-body-tertiary border-light" placeholder="Reply an answer…"></textarea>
-                      <div class="d-flex justify-content-end">
+                      <div class="d-flex justify-content-end w-100">
                             <button class="btn border border-success text-success rounded-0 ms-3 position-relative" type="button" 
                         data-bs-toggle="collapse" data-bs-target="#collapseExample" 
                         aria-expanded="false" aria-controls="collapseExample">Cancel</button>
