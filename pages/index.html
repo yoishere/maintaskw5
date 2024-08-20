@@ -72,7 +72,7 @@
             </a>
           </div>
           <div class="w-75">
-            <p class="fs-12 text-body-tertiary text-end">2 comments</p>
+            <p class="fs-12 text-body-tertiary text-end">2 comments</p>            
             <div class="card w-100 rounded-0">
               <div class="card-header">
                 <p class="mb-1 fs-12">Chapter Assignment 2 / HTML&CSS</p>
@@ -118,7 +118,7 @@
                   </div>
                     <!-- 以下是彈跳視窗 -->
                 <div class="collapse position-absolute  bottom-0 right-0 w-100" id="collapseExample">
-                  <!-- 為甚麼這邊定位在設定在andy留言那一層，但是卻沒辦法蓋到正確位置 -->
+                  <!-- 要記得檢查position-absolute的父層是不是relative，一定要包住 -->
                   <div class="card rounded-0 w-100">
                       <div class="card-header">
                         <ul class="nav nav-pills card-header-pills">
@@ -177,9 +177,8 @@
                   </div>
                 </div>
                 </div>
-              </div>
-              
-            </div>  
+              </div>              
+            </div> 
             <!-- 以下是最下面左右按鈕+Mark&reply鈕 -->
             <div class="d-flex justify-content-between mt-3 ">
               <div class="d-flex">
@@ -194,11 +193,9 @@
                 data-bs-toggle="collapse" data-bs-target="#collapseExample" 
                 aria-expanded="false" aria-controls="collapseExample">Reply</button>
               </div>
-            </div>         
+            </div>
+            <!-- Mark&reply鈕  end-->                      
           </div>
-        
-          
-
         </div>
       </main>
     </div>
